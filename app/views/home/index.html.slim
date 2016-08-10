@@ -1,0 +1,19 @@
+.video-container
+	= video_tag 'background.webm', autoplay: true, loop: true
+
+.overlay 
+	.message
+	  	h1 
+	  		| Experiments 
+	  		small Software
+
+		p.lead under construction, please come back later
+
+	.contact
+		p meanwhile, you can get in touch via:
+		p.lead
+			i.fa.fa-phone
+			|  +1 708 731 9893
+			br
+			i.fa.fa-envelope>
+			= mail_to 'rafael@experimentssoft.com', 'rafael@experimentssoft.com',encode: 'javascript'

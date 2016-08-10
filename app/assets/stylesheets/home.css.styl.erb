@@ -1,0 +1,56 @@
+// Place all the styles related to the matching controller here.
+// They will automatically be included in application.css.
+// You can use Stylus syntax here: http://learnboost.github.io/stylus
+
+$gray-base = darken(white, 30%)
+$font-family-sans-serif = "jaf-bernina-sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+$headings-font-family =  "changeling-neo", "Helvetica Neue", Helvetica, Arial, sans-serif
+$link-color = $body-bg
+
+spacing = 50px
+
+@import 'nib'
+@import 'bootstrap'
+
+h1
+	font-weight 700
+	small
+		font-weight 300
+		font-size 100%
+
+.video-container
+	fixed top bottom left right
+	overflow hidden
+	z-index -100
+	
+	@media (max-width: 767px)
+		background url(<%= image_path 'background.png' %>) center center / cover no-repeat
+		
+		video
+			display none
+
+	video 
+		absolute top left
+		width 100%
+		height 100%
+
+		@media (min-aspect-ratio: 16/9) 
+			height 300%
+			top: -100%
+
+		@media (max-aspect-ratio: 16/9)
+			width 300%
+			left -100%
+
+.overlay
+	fixed top bottom left right
+	z-index 200
+
+	background alpha(#000, .8)
+	
+	.message
+		text-align right
+		absolute top 50% right spacing
+		
+	.contact
+		absolute bottom spacing right spacing
