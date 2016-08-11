@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.1'
+
 gem 'slim-rails'
 gem "font-awesome-rails"
 gem 'actionview-encoded_mail_to'
