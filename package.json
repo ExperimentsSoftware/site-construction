@@ -1,8 +1,8 @@
 {
-  "name": "experiments-construction",
+  "name": "site-construction",
   "version": "1.0.0",
   "description": "Temporary website for Experiments Software",
-  "main": "index.js",
+  "main": "SiteConstruction",
   "directories": {
     "test": "test"
   },
@@ -13,6 +13,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Rafael Soares",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExperimentsSoftware/site-construction.git"
+  },
+  "author": "Rafael Soares <rafasoaresms@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ExperimentsSoftware/site-construction/issues"
+  },
+  "homepage": "https://github.com/ExperimentsSoftware/site-construction#readme"
 }

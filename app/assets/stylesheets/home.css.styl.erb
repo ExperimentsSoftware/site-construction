@@ -18,23 +18,22 @@ h1
 		font-weight 300
 		font-size 100%
 
-.video-container
+.background
 	fixed top bottom left right
 	overflow hidden
 	z-index -100
-	
+	background url(<%= image_path 'construction.jpg' %>) center center / cover no-repeat
+
 	@media (max-width: 767px)
-		background url(<%= image_path 'background.png' %>) center center / cover no-repeat
-		
 		video
 			display none
 
-	video 
+	video
 		absolute top left
 		width 100%
 		height 100%
 
-		@media (min-aspect-ratio: 16/9) 
+		@media (min-aspect-ratio: 16/9)
 			height 300%
 			top: -100%
 
@@ -46,11 +45,18 @@ h1
 	fixed top bottom left right
 	z-index 200
 
-	background alpha(#000, .8)
-	
+	background alpha(#000, .75)
+
 	.message
 		text-align right
 		absolute top 50% right spacing
-		
+
 	.contact
 		absolute bottom spacing right spacing
+
+.language-selector
+	absolute top 1em left 1em
+	z-index 300
+
+	a
+		margin-right 1em

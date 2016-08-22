@@ -20,4 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  construction: "under construction, please come back later"
+  get_in_touch: "meanwhile, you can get in touch via:"
+  email: "contact@experimentssoft.com"
