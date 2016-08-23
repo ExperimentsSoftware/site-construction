@@ -12,11 +12,23 @@ spacing = 50px
 @import 'nib'
 @import 'bootstrap'
 
+image-replacement(path, width = 100px, height = 100px)
+	width width
+	height height
+	background center center / cover no-repeat
+	background-image path
+	text-indent 100%
+	white-space nowrap
+	overflow hidden
+
 h1
 	font-weight 700
 	small
 		font-weight 300
 		font-size 100%
+
+	&.brand
+		image-replacement url(<%= image_path 'logo.png' %>) 576px 96px
 
 .background
 	fixed top bottom left right
