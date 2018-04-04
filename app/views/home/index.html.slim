@@ -14,8 +14,8 @@
 		p
 			= t :get_in_touch
 		p.lead
-			i.fa.fa-phone
-			|  +1 708 731 9893
+			i.fa.fa-phone>
+			= t :phone
 			br
 			i.fa.fa-envelope>
 			= mail_to t(:email), t(:email), encode: 'javascript'
